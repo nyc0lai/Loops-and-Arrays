@@ -39,6 +39,10 @@ for(let i = 1; i <=10; i++) {
 // 5) Calculate the sum of numbers from 1 to 10
 console.log('5) Calculate the sum of numbers from 1 to 10');
 
+console.log('we have the matrice with numbers from point (1)',numbers);
 
+const sum = numbers.reduce((cumul, curent) => {return cumul+curent;}) 
+console.log(numbers.join('+'),`= ${sum}`);
 
-//console.log('1+2+3+4+5+6+7+8+9+10 =',sum);
+// 6) Calculate 10!
+
