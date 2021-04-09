@@ -35,20 +35,26 @@ console.log("");
 // 5) Calculate the sum of numbers from 1 to 10
 console.log("5) Calculate the sum of numbers from 1 to 10");
 
-let sum1to10 = 0;
-for(let i = 1; i <= 10; i++){
-    sum1to10 = sum1to10 + i;
+const sumTo = (n) => {
+    if(n < 1){
+        return 0;
+    } else {
+        return sumTo(n-1)+n;
+    }
 }
-console.log(`Sum of numbers 1 to 10 is ${sum1to10}`);
+console.log('Sum of numbers 1 to 10 is '+sumTo(10));
 console.log("");
 
 // 6) Calculate 10!
 console.log("6) Calculate 10!");
-let tenFactorial = 1;
-for(let i = 1; i <= 10; i++){
-    tenFactorial = tenFactorial * i;
-}
-console.log(`10! = ${tenFactorial}`);
+function getFactorial(n) {
+    if(n < 1) {
+        return 1;
+    } else {
+        return getFactorial(n-1)*n;
+    }
+    };
+console.log("10! = "+getFactorial(10));
 console.log("");
 
 // 7) Calculate the sum of odd numbers greater than 10 and less than 30
