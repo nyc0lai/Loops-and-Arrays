@@ -224,4 +224,4 @@ const countWords = words => words.split(" ").length;
 console.log("Create a function that will receive an array of numbers as argument and will return a new array with distinct elements");
 console.log(countWords("Create a function that will receive an array of numbers as argument and will return a new array with distinct elements"), "words");
 
-//finish, huh
+//have a nice day :)
